@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 # Install Conda (if not already installed)
 if ! command -v conda &> /dev/null; then
