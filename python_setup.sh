@@ -1,17 +1,21 @@
 
-# Install minicondat
-echo "Installing miniconda."
-brew install --cask miniconda
-conda init "$(basename "${SHELL}")"
+# Install Conda (if not already installed)
+if ! command -v conda &> /dev/null; then
+    echo "Installing Miniconda..."
+    brew install --cask miniconda
+    conda init "$(basename "${SHELL}")"
+fi
 
 # Install pipx
 echo "Installing pipx."
 brew install pipx
 pipx ensurepath
 
-# Install poetry
-echo "Installing poetry."
-pipx install poetry
+# Install Poetry (if not already installed)
+if ! command -v poetry &> /dev/null; then
+    echo "Installing Poetry..."
+    brew install poetry
+fi
 poetry config virtualenvs.create true
 # Add poetry autocompletion
 mkdir $ZSH_CUSTOM/plugins/poetry
