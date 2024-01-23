@@ -4,6 +4,7 @@
 # Install Brew Packages
 brew install tree
 brew install latexindent
+brew install thefuck
 
 # ---
 # Install MacOS Applications
