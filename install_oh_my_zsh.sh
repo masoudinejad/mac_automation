@@ -15,8 +15,8 @@ echo "Cloning zsh-autosuggestions."
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 # Set additional plugins (git and syntax-highlighting)
-additional_plugins=(git syntax-highlighting)
-
+additional_plugins=(git syntax-highlighting conda-zsh-completion poetry)
+git zsh-autosuggestions zsh-syntax-highlighting 
 # Set Zsh as the default shell
 chsh -s /bin/zsh
 
