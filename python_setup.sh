@@ -12,7 +12,7 @@ pipx ensurepath
 # Install poetry
 echo "Installing poetry."
 pipx install poetry
-
+poetry config virtualenvs.create true
 # Add poetry autocompletion
 mkdir $ZSH_CUSTOM/plugins/poetry
 poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
