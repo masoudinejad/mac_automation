@@ -5,7 +5,6 @@
 brew install tree
 brew install latexindent
 brew install thefuck
-brew install pipx
 
 # ---
 # Install MacOS Applications
