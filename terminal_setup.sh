@@ -17,7 +17,7 @@ fi
 echo "Installing terminal plugins using Homebrew..."
 brew install zsh-autosuggestions zsh-syntax-highlighting conda-zsh-completion
 
-sed -i '' -e 's/^plugins=(/plugins=(git zsh-autosuggestions zsh-syntax-highlighting conda-zsh-completion poetry /' "${ZDOTDIR:-$HOME}/.zshrc"
+sed -i '' -e 's/^plugins=(git/plugins=(git zsh-autosuggestions zsh-syntax-highlighting conda-zsh-completion poetry /' "${ZDOTDIR:-$HOME}/.zshrc"
 
 # Source the zsh-autosuggestions script at the end of .zshrc
 echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> "${ZDOTDIR:-$HOME}/.zshrc"
