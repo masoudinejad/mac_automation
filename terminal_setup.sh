@@ -15,12 +15,15 @@ fi
 
 # Install plugins using Homebrew
 echo "Installing terminal plugins using Homebrew..."
-brew install zsh-autosuggestions zsh-syntax-highlighting conda-zsh-completion
+brew install zsh-autosuggestions zsh-syntax-highlighting powerlevel10k
 
-sed -i '' -e 's/^plugins=(git/plugins=(git zsh-autosuggestions zsh-syntax-highlighting conda-zsh-completion poetry /' "${ZDOTDIR:-$HOME}/.zshrc"
+sed -i '' -e 's/^plugins=(git/plugins=(git poetry /' "${ZDOTDIR:-$HOME}/.zshrc"
+
+# Source the powerlevel10k script at the end of .zshrc
+echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 # Source the zsh-autosuggestions script at the end of .zshrc
-echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> "${ZDOTDIR:-$HOME}/.zshrc"
+echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 # Source the zsh-syntax-highlighting script at the end of .zshrc
 echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
