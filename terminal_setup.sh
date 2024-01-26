@@ -5,7 +5,7 @@ echo "Installing nano..."
 brew install nano
 # Add syntax highlighting for nano
 nano_syntax_content='include "/opt/homebrew/share/nano/*.nanorc"'
-echo "$nano_syntax_content" > "~/.nanorc"
+echo "$nano_syntax_content" > ~/.nanorc
 
 # Install Oh My Zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
