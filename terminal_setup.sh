@@ -22,6 +22,10 @@ sed -i '' -e 's/^plugins=(git/plugins=(git poetry /' "${ZDOTDIR:-$HOME}/.zshrc"
 # Source the powerlevel10k script at the end of .zshrc
 echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ${ZDOTDIR:-$HOME}/.zshrc
 
+# Copy p10k theme setup to the home
+source_file=".p10k.zsh"
+cp "$source_file" "${ZDOTDIR:-$HOME}/$source_file"
+
 # Source the zsh-autosuggestions script at the end of .zshrc
 echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
