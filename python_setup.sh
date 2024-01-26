@@ -15,7 +15,7 @@ pipx ensurepath
 # Install Poetry (if not already installed)
 if ! command -v poetry &> /dev/null; then
     echo "Installing Poetry..."
-    brew install poetry
+    pipx install poetry
 fi
 poetry config virtualenvs.create true
 # Add poetry autocompletion
