@@ -8,33 +8,34 @@ brew install thefuck
 
 # ---
 # Install MacOS Applications
-brew cask install --cask warp
-brew cask install --cask brave-browser
-brew cask install --cask rectangle
-brew cask install --cask hiddenbar
-brew cask install --cask alt-tab
-brew cask install --cask appcleaner
-brew cask install --cask mac-mouse-fix
-brew cask install --cask Bitwarden
-brew cask install --cask visual-studio-code
-brew cask install --cask iina
-brew cask install --cask shottr
-brew cask install --cask spotify
-brew cask install --cask skype
-brew cask install --cask zotero
-brew cask install --cask mactex
-brew cask install --cask texstudio
+brew install --cask warp
+brew install --cask brave-browser
+brew install --cask rectangle
+brew install --cask hiddenbar
+brew install --cask alt-tab
+brew install --cask appcleaner
+brew install --cask mac-mouse-fix
+brew install --cask Bitwarden
+brew install --cask visual-studio-code
+brew install --cask iina
+brew install --cask shottr
+brew install --cask spotify
+brew install --cask skype
+brew install --cask zotero
+brew install --cask mactex
+brew install --cask texstudio
+brew install --cask obsidian
 
 # ---
 # Review before install (optional)
-brew cask install --cask cheatsheet
-brew cask install --cask logi-options-plus
-brew cask install --cask applepi-baker
-brew cask install --cask netron
-brew cask install --cask rstudio
-brew cask install --cask quarto
-brew cask install --cask vlc
-brew cask install --cask stats
+brew install --cask cheatsheet
+brew install --cask logi-options-plus
+brew install --cask applepi-baker
+brew install --cask netron
+brew install --cask rstudio
+brew install --cask quarto
+brew install --cask vlc
+brew install --cask stats
 
 # ---
 # Install Fonts
